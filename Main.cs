@@ -60,7 +60,7 @@ namespace WackeClient
             DeviceMonitor.Start();//开始监听设备变化
             DeviceMonitor.DeviceChanged += DeviceMonitor_DeviceChanged;
             FastBoot.Initialize();//初始化fastboot
-            Yyz.验证初始化("709", "ZTSOWH3CBUFCIVO7FFFG3XBLP22JDXTK", "8R6pipHyGdxK2SQMY7Mxn2X8cTSypHxz");
+            Yyz.验证初始化("", "", "");
             ProgressManager.ProgressUpdated += OnQualcommProgress_Changed;//开始高通刷机数据变化事件
             _ = Yyz.开始心跳();
             Yyz.OnClosed += OnAceClosed;//用户被禁用
